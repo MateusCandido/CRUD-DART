@@ -12,7 +12,7 @@ main() {
 
   Aluno alunoUm = new Aluno();
   Aluno alunoDois = new Aluno();
-
+  Aluno alunoTres = new Aluno();
   //Cadastro Aluno 1
   alunoUm.id = 01;
   alunoUm.nome = 'Jubileu';
@@ -29,6 +29,14 @@ main() {
   alunoService.cadastrar(alunoDois);
   //print(aluno);
 
+  //Cadastro aluno 3
+  alunoTres.id = 03;
+  alunoTres.nome = 'Cleber';
+  alunoTres.email = 'clebinho@email.com';
+
+  alunoService.cadastrar(alunoTres);
+  //print(aluno);
+
   //Lista de alunos cadastrados
   print("------------------Lista de Alunos------------------");
   alunoService.buscarTodos().forEach((element) {
@@ -41,9 +49,10 @@ main() {
 
   Grupo grupoUm = new Grupo();
   Grupo grupoDois = new Grupo();
+  Grupo grupoTres = new Grupo();
   //Cadastrar Grupo 1
   grupoUm.id = 01;
-  grupoUm.nome = 'Nome do Grupo 1';
+  grupoUm.nome = 'Grupo 1';
   grupoUm.descricao = 'Descrição do grupo 1';
 
   grupoService.cadastrar(grupoUm);
@@ -51,10 +60,18 @@ main() {
 
   //Cadastrar Grupo 2
   grupoDois.id = 02;
-  grupoDois.nome = 'Nome do Grupo 2';
+  grupoDois.nome = 'Grupo 2';
   grupoDois.descricao = 'Descrição do grupo 2';
 
   grupoService.cadastrar(grupoDois);
+  //print(grupo);
+
+  //Cadastrar Grupo 3
+  grupoTres.id = 02;
+  grupoTres.nome = 'Grupo 3';
+  grupoTres.descricao = 'Descrição do grupo 3';
+
+  grupoService.cadastrar(grupoTres);
   //print(grupo);
 
   //Lista de grupos cadastrados
