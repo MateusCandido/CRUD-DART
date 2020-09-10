@@ -10,22 +10,23 @@ main() {
   Repository<Aluno, int> repositoryAluno = new RepositoryImpl();
   AlunoService alunoService = new AlunoService(repositoryAluno);
 
-  Aluno aluno = new Aluno();
+  Aluno alunoUm = new Aluno();
+  Aluno alunoDois = new Aluno();
 
   //Cadastro Aluno 1
-  aluno.id = 01;
-  aluno.nome = 'Jubileu';
-  aluno.email = 'jubileu@email.com';
+  alunoUm.id = 01;
+  alunoUm.nome = 'Jubileu';
+  alunoUm.email = 'jubileu@email.com';
 
-  alunoService.cadastrar(aluno);
+  alunoService.cadastrar(alunoUm);
   //print(aluno);
 
   //Cadastro aluno 2
-  aluno.id = 02;
-  aluno.nome = 'Marineide';
-  aluno.email = 'marineide@email.com';
+  alunoDois.id = 02;
+  alunoDois.nome = 'Marineide';
+  alunoDois.email = 'marineide@email.com';
 
-  alunoService.cadastrar(aluno);
+  alunoService.cadastrar(alunoDois);
   //print(aluno);
 
   //Lista de alunos cadastrados
@@ -38,22 +39,22 @@ main() {
   Repository<Grupo, int> repositoryGrupo = new RepositoryImpl();
   GrupoService grupoService = new GrupoService(repositoryGrupo);
 
-  Grupo grupo = new Grupo();
-
+  Grupo grupoUm = new Grupo();
+  Grupo grupoDois = new Grupo();
   //Cadastrar Grupo 1
-  grupo.id = 01;
-  grupo.nome = 'Nome do Grupo 1';
-  grupo.descricao = 'Descrição do grupo 1';
+  grupoUm.id = 01;
+  grupoUm.nome = 'Nome do Grupo 1';
+  grupoUm.descricao = 'Descrição do grupo 1';
 
-  grupoService.cadastrar(grupo);
+  grupoService.cadastrar(grupoUm);
   //print(grupo);
 
   //Cadastrar Grupo 2
-  grupo.id = 02;
-  grupo.nome = 'Nome do Grupo 2';
-  grupo.descricao = 'Descrição do grupo 2';
+  grupoDois.id = 02;
+  grupoDois.nome = 'Nome do Grupo 2';
+  grupoDois.descricao = 'Descrição do grupo 2';
 
-  grupoService.cadastrar(grupo);
+  grupoService.cadastrar(grupoDois);
   //print(grupo);
 
   //Lista de grupos cadastrados
